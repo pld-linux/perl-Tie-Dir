@@ -26,7 +26,7 @@ Ten modu³ udostêpnia sposób czytania katalogów przy u¿yciu hasza.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
