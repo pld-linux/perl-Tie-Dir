@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	Dir
-Summary:	Tie::Dir perl module
-Summary(pl):	Modu³ perla Tie::Dir
+Summary:	Tie::Dir - class definition for reading directories via a tied hash
 Name:		perl-Tie-Dir
 Version:	1.02
 Release:	8
@@ -15,10 +14,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tie::Dir perl module.
-
-%description -l pl
-Modu³ perla Tie::Dir.
+This module provides a method of reading directories using a hash.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
