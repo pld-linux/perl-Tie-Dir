@@ -3,7 +3,7 @@ Summary:	Tie-Dir perl module
 Summary(pl):	Modu³ perla Tie-Dir
 Name:		perl-Tie-Dir
 Version:	1.02
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
