@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	Dir
-%include	/usr/lib/rpm/macros.perl
 Summary:	Tie-Dir perl module
 Summary(pl):	Modu³ perla Tie-Dir
 Name:		perl-Tie-Dir
 Version:	1.02
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Tie-Dir perl module.
 Modu³ perla Tie-Dir.
 
 %prep
-%setup -q -n Tie-Dir-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
