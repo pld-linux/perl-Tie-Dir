@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Tie
-%define	pnam	Dir
+%define		pdir	Tie
+%define		pnam	Dir
 Summary:	Tie::Dir - class definition for reading directories via a tied hash
 Summary(pl):	Tie::Dir - definicja klasy do czytania katalogów poprzez powi±zany hasz
 Name:		perl-Tie-Dir
