@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	Dir
@@ -6,7 +10,7 @@ Summary(pl):	Tie::Dir - definicja klasy do czytania katalogów poprzez powi±zany 
 Name:		perl-Tie-Dir
 Version:	1.02
 Release:	11
-License:	GPL
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8f0ebfdc20e137dc96dec86f916efbc2
@@ -29,10 +33,13 @@ Ten modu³ udostêpnia sposób czytania katalogów przy u¿yciu hasza.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
