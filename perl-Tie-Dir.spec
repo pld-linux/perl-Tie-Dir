@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	Dir
-Summary:	Tie-Dir perl module
-Summary(pl):	Modu³ perla Tie-Dir
+Summary:	Tie::Dir perl module
+Summary(pl):	Modu³ perla Tie::Dir
 Name:		perl-Tie-Dir
 Version:	1.02
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tie-Dir perl module.
+Tie::Dir perl module.
 
 %description -l pl
-Modu³ perla Tie-Dir.
+Modu³ perla Tie::Dir.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
