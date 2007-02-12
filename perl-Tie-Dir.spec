@@ -6,7 +6,7 @@
 %define		pdir	Tie
 %define		pnam	Dir
 Summary:	Tie::Dir - class definition for reading directories via a tied hash
-Summary(pl):	Tie::Dir - definicja klasy do czytania katalogów poprzez powi±zany hasz
+Summary(pl.UTF-8):   Tie::Dir - definicja klasy do czytania katalogÃ³w poprzez powiÄ…zany hasz
 Name:		perl-Tie-Dir
 Version:	1.02
 Release:	11
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module provides a method of reading directories using a hash.
 
-%description -l pl
-Ten modu³ udostêpnia sposób czytania katalogów przy u¿yciu hasza.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia sposÃ³b czytania katalogÃ³w przy uÅ¼yciu hasza.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
