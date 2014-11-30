@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Tie
 %define		pnam	Dir
+%include	/usr/lib/rpm/macros.perl
 Summary:	Tie::Dir - class definition for reading directories via a tied hash
 Summary(pl.UTF-8):	Tie::Dir - definicja klasy do czytania katalogów poprzez powiązany hasz
 Name:		perl-Tie-Dir
@@ -14,6 +14,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8f0ebfdc20e137dc96dec86f916efbc2
+URL:		http://search.cpan.org/dist/Tie-Dir/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
